@@ -1,5 +1,6 @@
 PublicWorks::Application.routes.draw do
   resources :artifacts
+  resources :artifact_searches
 
   root to: 'artifacts#index'
 

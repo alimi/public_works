@@ -32,6 +32,8 @@ gem 'carrierwave-aws'
 
 gem 'twitter-bootstrap-rails'
 
+gem 'pg_search'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
