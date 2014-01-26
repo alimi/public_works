@@ -31,7 +31,8 @@ class ArtifactsController < ApplicationController
       :date,
       :history,
       :references,
-      :location
+      :location,
+      :image
     )
   end
 end

@@ -22,6 +22,10 @@
   <li>
     Location: <%= @artifact.location %><br/>
   </li>
+  <li>
+    Image:<br/>
+    <%= image_tag @artifact.image_url.to_s %>
+  </li>
 </ul>
 
 <%= link_to 'Edit', edit_artifact_path(@artifact) %>
