@@ -1,0 +1,8 @@
+<ul>
+  <%- @artifacts.each do |artifact| %>
+    <li>
+      <p>Title: <%= artifact.title %></p>
+      <p>Brief Description: <%= artifact.description %></p>
+    </li>
+  <% end %>
+</ul>
