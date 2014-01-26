@@ -21,7 +21,13 @@ You will need a system with Ruby, Rails, and Postgres.
 
   `bundle install`
 
-3. Create and setup databases
+3. Copy database config
+
+  `cp config/database.yml-example config/database.yml`
+  
+  and update username/password
+  
+4. Create and setup databases
 
   ```
   rake db:create:all
@@ -29,7 +35,7 @@ You will need a system with Ruby, Rails, and Postgres.
   rake db:test:prepare
   ```
 
-4. Open the app in your favorite browser at
+5. Open the app in your favorite browser at
    [http://localhost:3000](http://localhost:3000)
 
 ### Tests?
