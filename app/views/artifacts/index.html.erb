@@ -1,11 +1,13 @@
 <% if @artifacts.present? %>
-  <% @artifacts.each do |artifact| %>
-    <div class="artifacts">
-      <%= link_to image_tag(artifact.image_url.to_s), artifact %>
-      <br/>
-      <strong><%= artifact.title %> by <%= artifact.artist %></strong>
-    </div>
-  <% end %>
+  <div class='artifacts-masonry'>
+    <% @artifacts.each do |artifact| %>
+      <div class="artifacts">
+        <%= link_to image_tag(artifact.image_url.to_s), artifact %>
+        <br/>
+        <strong><%= artifact.title %> by <%= artifact.artist %></strong>
+      </div>
+    <% end %>
+  </div>
 <% else %>
   <h1>No artifacts found.</h1>
 <% end %>
