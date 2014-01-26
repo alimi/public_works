@@ -7,15 +7,19 @@
 <div class="left">
   <dl class="dl-horizontal">
     <dt>Description</dt>
-    <dd><%= @artifact.description %></dd>
+    <dd><%= display_field @artifact.description %></dd>
+
     <dt>Date</dt>
-    <dd><%= @artifact.date %></dd>
+    <dd><%= display_field @artifact.date %></dd>
+
     <dt>Location</dt>
-    <dd><%= @artifact.location %></dd>
+    <dd><%= display_field @artifact.location %></dd>
+
     <dt>History</dt>
-    <dd><%= @artifact.history %></dd>
+    <dd><%= display_field @artifact.history %></dd>
+
     <dt>References</dt>
-    <dd><%= @artifact.references %></dd>
+    <dd><%= display_field @artifact.references %></dd>
   </dl>
 
   <dl class="dl-horizontal">
