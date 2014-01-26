@@ -1,0 +1,33 @@
+<h1>New Artifact</h1>
+
+<%= form_for @artifact, html: { multipart: true } do |f| %>
+  <div class="left">
+    <dl class="">
+      <dt><%= f.label :title %></dt>
+      <dd><%= f.text_field :title %></dd>
+
+      <dt><%= f.label :description %></dt>
+      <dd><%= f.text_field :description %></dd>
+
+      <dt><%= f.label :artist %></dt>
+      <dd><%= f.text_field :artist %></dd>
+
+      <dt><%= f.label :date %></dt>
+      <dd><%= f.date_select :date %></dd>
+
+      <dt><%= f.label :location %></dt>
+      <dd><%= f.text_field :location %></dd>
+
+      <dt><%= f.label :history %></dt>
+      <dd><%= f.text_area :history, rows: 5, class: 'long-text-area' %></dd>
+
+      <dt><%= f.label :references %></dt>
+      <dd><%= f.text_area :references, rows: 5, class: 'long-text-area' %></dd>
+
+      <dt><%= f.label :image %></dt>
+      <dd><%= f.file_field :image %></dd>
+    </dl>
+  
+    <%= f.submit class: 'btn btn-primary' %>
+  </div>
+<% end %>

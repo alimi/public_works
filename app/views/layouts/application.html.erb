@@ -11,7 +11,12 @@
   <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
       <div class="container">
-        <a class="brand" href="#">Baltimore Public Works</a>
+        <%= link_to 'Baltimore Public Works', :root, class: 'brand' %>
+        <div class="nav-collapse">
+          <ul class="nav">
+            <li><%= link_to "Add to the Collection", new_artifact_path %></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
