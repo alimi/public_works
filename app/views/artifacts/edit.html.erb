@@ -1,0 +1,35 @@
+<h1>Edit Artifact</h1>
+
+<%= form_for @artifact do |f| %>
+  <p>
+    <%= f.label :title %><br/>
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :description %><br/>
+    <%= f.text_field :description %>
+  </p>
+  <p>
+    <%= f.label :artist %><br/>
+    <%= f.text_field :artist %>
+  </p>
+  <p>
+    <%= f.label :date %><br/>
+    <%= f.text_field :date %>
+  </p>
+  <p>
+    <%= f.label :history %><br/>
+    <%= f.text_field :history %>
+  </p>
+  <p>
+    <%= f.label :references %><br/>
+    <%= f.text_field :references %>
+  </p>
+  <p>
+    <%= f.label :location %><br/>
+    <%= f.text_field :location %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

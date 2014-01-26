@@ -1,8 +1,11 @@
+<h1>Artifacts</h1>
+
 <ul>
   <%- @artifacts.each do |artifact| %>
     <li>
       <p>Title: <%= artifact.title %></p>
       <p>Brief Description: <%= artifact.description %></p>
+      <p><%= link_to 'Read more...', artifact %></p>
     </li>
   <% end %>
 </ul>

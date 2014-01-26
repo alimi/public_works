@@ -1,0 +1,27 @@
+<h1>Artifact</h1>
+
+<ul>
+  <li>
+    Title: <%= @artifact.title %>
+  </li>
+  <li>
+    Description: <%= @artifact.description %><br/>
+  </li>
+  <li>
+    Artist: <%= @artifact.artist %><br/>
+  </li>
+  <li>
+    Date: <%= @artifact.date %><br/>
+  </li>
+  <li>
+    History: <%= @artifact.history %><br/>
+  </li>
+  <li>
+    References: <%= @artifact.references %><br/>
+  </li>
+  <li>
+    Location: <%= @artifact.location %><br/>
+  </li>
+</ul>
+
+<%= link_to 'Edit', edit_artifact_path(@artifact) %>
