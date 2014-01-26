@@ -1,39 +1,40 @@
-<h1>Edit Artifact</h1>
+<h1><%= @artifact.title %></h1>
+<h2>Artist: <%= @artifact.artist %></h2>
 
 <%= form_for @artifact, html: { multipart: true } do |f| %>
-  <p>
-    <%= f.label :title %><br/>
-    <%= f.text_field :title %>
-  </p>
-  <p>
-    <%= f.label :description %><br/>
-    <%= f.text_field :description %>
-  </p>
-  <p>
-    <%= f.label :artist %><br/>
-    <%= f.text_field :artist %>
-  </p>
-  <p>
-    <%= f.label :date %><br/>
-    <%= f.text_field :date %>
-  </p>
-  <p>
-    <%= f.label :history %><br/>
-    <%= f.text_field :history %>
-  </p>
-  <p>
-    <%= f.label :references %><br/>
-    <%= f.text_field :references %>
-  </p>
-  <p>
-    <%= f.label :location %><br/>
-    <%= f.text_field :location %>
-  </p>
-  <p>
-    <%= f.label :image %><br/>
-    <%= f.file_field :image %>
-  </p>
-  <p>
-    <%= f.submit %>
-  </p>
+  <div class="artifact">
+    <%= image_tag @artifact.image_url.to_s %>
+  </div>
+  
+  <div class="left">
+    <dl class="">
+      <dt><%= f.label :title %></dt>
+      <dd><%= f.text_field :title %></dd>
+
+      <dt><%= f.label :description %></dt>
+      <dd><%= f.text_field :description %></dd>
+
+      <dt><%= f.label :artist %></dt>
+      <dd><%= f.text_field :artist %></dd>
+
+      <dt><%= f.label :date %></dt>
+      <dd><%= f.date_select :date %></dd>
+
+      <dt><%= f.label :location %></dt>
+      <dd><%= f.text_field :location %></dd>
+
+      <dt><%= f.label :history %></dt>
+      <dd><%= f.text_area :history, rows: 5, class: 'long-text-area' %></dd>
+
+      <dt><%= f.label :references %></dt>
+      <dd><%= f.text_area :references, rows: 5, class: 'long-text-area' %></dd>
+
+      <dt><%= f.label :image %></dt>
+      <dd><%= f.file_field :image %></dd>
+    </dl>
+  
+    <dl class="dl-horizontal">
+      <dt><%= f.submit class: 'btn btn-primary' %></dt>
+    </dl>
+  </div>
 <% end %>

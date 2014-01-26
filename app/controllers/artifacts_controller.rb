@@ -15,7 +15,7 @@ class ArtifactsController < ApplicationController
     @artifact = Artifact.find params[:id]
 
     if @artifact.update_attributes artifact_params
-      redirect_to action: :index
+      redirect_to @artifact
     else
       render :edit
     end
