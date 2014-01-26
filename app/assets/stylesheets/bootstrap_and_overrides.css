@@ -27,6 +27,7 @@ div.artifact {
   float:left
 }
 
-.long-text-area {
-  width: 100%;
+textarea {
+  width: 500px;
+  height: 100px;
 }
