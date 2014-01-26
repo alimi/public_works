@@ -15,19 +15,19 @@ You will need a system with Ruby, Rails, and Postgres.
 
 1. Clone the repo
 
-`git@github.com:alimi/public_works.git`
+  `git@github.com:alimi/public_works.git`
 
 2. Install gems
 
-`bundle install`
+  `bundle install`
 
 3. Create and setup databases
 
-```
-rake db:create:all
-rake db:migrate
-rake db:test:prepare
-```
+  ```
+  rake db:create:all
+  rake db:migrate
+  rake db:test:prepare
+  ```
 
 4. Open the app in your favorite browser at
    [http://localhost:3000](http://localhost:3000)
