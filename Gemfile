@@ -28,6 +28,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 gem 'carrierwave'
+gem 'carrierwave-aws'
 
 gem 'twitter-bootstrap-rails'
 
