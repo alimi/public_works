@@ -14,9 +14,9 @@
         <%= link_to 'Baltimore City Public Art and Monuments', :root, class: 'brand' %>
         <div class="nav-collapse">
           <ul class="nav">
-            <li><%= link_to "Add to the Collection", new_artifact_path %></li>
+            <li><%= link_to "Add to the Collection", new_item_path %></li>
             <li>
-              <%= form_tag artifact_searches_path, class: 'nav-search' do %>
+              <%= form_tag item_searches_path, class: 'nav-search' do %>
                 <%= text_field_tag :search, nil, class: 'search-query' %>
                 <%= submit_tag 'Search', class: 'btn' %>
               <% end %>

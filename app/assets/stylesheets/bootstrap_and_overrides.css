@@ -15,12 +15,12 @@ div.navbar-container {
   padding-top: 15px;
 }
 
-div.artifacts {
+div.items {
   width: 20%;
   margin-bottom: 5px;
 }
 
-div.artifact {
+div.item {
   float:left;
   max-width:33%;
   padding-right: 15px;

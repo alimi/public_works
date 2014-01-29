@@ -1,13 +1,13 @@
 $(document).ready(function() {
-  $('.artifacts-masonry').masonry({
+  $('.items-masonry').masonry({
     columnWidth: 50,
-    itemSelctor: '.artifacts'
+    itemSelctor: '.items'
   });
 });
 
 $(document).on('page:load', function() {
-  $('.artifacts-masonry').masonry({
+  $('.items-masonry').masonry({
     columnWidth: 50,
-    itemSelctor: '.artifacts'
+    itemSelctor: '.items'
   });
 });

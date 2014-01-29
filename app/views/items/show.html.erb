@@ -1,0 +1,30 @@
+<div class="item">
+  <%= link_to image_tag(@item.image_url), @item.image.url %>
+  <h1><%= @item.title %></h1>
+  <h2>Artist: <%= @item.artist %></h2>
+</div>
+
+<div class="left">
+  <dl class="dl-horizontal">
+    <dt>Description</dt>
+    <dd><%= display_field @item.description %></dd>
+
+    <dt>Date</dt>
+    <dd><%= display_field @item.date %></dd>
+
+    <dt>Location</dt>
+    <dd><%= display_field @item.location %></dd>
+
+    <dt>History</dt>
+    <dd><%= display_field @item.history %></dd>
+
+    <dt>References</dt>
+    <dd><%= display_field @item.references %></dd>
+  </dl>
+
+  <dl class="dl-horizontal">
+    <dt>
+      <%= link_to 'Edit', edit_item_path(@item), class: 'btn btn-primary' %>
+    </dt>
+  </dl>
+</div>

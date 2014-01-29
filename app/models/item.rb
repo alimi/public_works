@@ -1,4 +1,4 @@
-class Artifact < ActiveRecord::Base
+class Item < ActiveRecord::Base
   include PgSearch
 
   mount_uploader :image, ImageUploader

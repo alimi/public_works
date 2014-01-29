@@ -1,8 +1,8 @@
 PublicWorks::Application.routes.draw do
-  resources :artifacts
-  resources :artifact_searches
+  resources :items
+  resources :item_searches
 
-  root to: 'artifacts#index'
+  root to: 'items#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

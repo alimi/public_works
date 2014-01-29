@@ -1,0 +1,13 @@
+<% if @items.present? %>
+  <div class='items-masonry'>
+    <% @items.each do |item| %>
+      <div class="items">
+        <%= link_to image_tag(item.image_url.to_s), item %>
+        <br/>
+        <strong><%= item.title %> by <%= item.artist %></strong>
+      </div>
+    <% end %>
+  </div>
+<% else %>
+  <h1>No items found.</h1>
+<% end %>
